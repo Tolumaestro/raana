@@ -433,6 +433,7 @@ footer li a i{
 @media screen and (max-width: 768px) {
     body {
         overflow-x: hidden;
+
     }
     .nav-links {
         position: absolute;
@@ -448,6 +449,7 @@ footer li a i{
         transition: transform 0.5s ease-in;
         padding-top: 50px;
         padding-left: 50px;
+        visibility: hidden;
     }
 
     .nav-links li {
@@ -500,6 +502,10 @@ footer li a i{
 
     .btn{
         margin: 25px 0;
+    }
+
+    #hijab .slideshow img{
+        height: 350px;
     }
 
     .accessories-container{
@@ -596,6 +602,7 @@ footer li a i{
 
 .nav-active {
     transform: translateX(0);
+    display: block;
 }
 
 @keyframes navLinkFade {
