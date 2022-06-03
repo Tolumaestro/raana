@@ -93,7 +93,7 @@ h1{
 
 /* NAVIGATION */
 #main-nav{
-    position: sticky;
+    position: sticky !important;
     top: 0;
     z-index: 2;
 }
@@ -433,7 +433,6 @@ footer li a i{
 @media screen and (max-width: 768px) {
     body {
         overflow-x: hidden;
-
     }
     .nav-links {
         position: absolute;
@@ -449,6 +448,9 @@ footer li a i{
         transition: transform 0.5s ease-in;
         padding-top: 50px;
         padding-left: 50px;
+        /* visibility: hidden; */
+        overflow: hidden;
+        display: none !important
     }
 
     .nav-links li {
@@ -472,7 +474,8 @@ footer li a i{
     .showcase-images{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        column-gap: 10px;
+        height: 520px;
     }
 
     .showcase-images img:nth-child(3),
@@ -483,6 +486,7 @@ footer li a i{
 
     .showcase-images img{
         width: 100%;
+        height: 250px;
     }
 
     .showcase-container p{
@@ -588,6 +592,7 @@ footer li a i{
     form.message .btn{
         margin: 0;
         padding: 8px 20px;
+        height: 40px;
     }
 
     .footer-container{
@@ -602,7 +607,7 @@ footer li a i{
 
 .nav-active {
     transform: translateX(0);
-    display: block;
+    display: block !important
 }
 
 @keyframes navLinkFade {
